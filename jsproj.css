@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 3rem;
+}
+
+body{
+    background-image: linear-gradient(120deg,#F46F06 ,#FFF68F );
+    color: white;
+    min-height: 100vh;
+}
+
+h1,form,
+.todo-list-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+.todo-container{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 20vh;
+}
+
+input,button {
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+}
+.input-box {
+    padding: 0.5rem;
+}
+.add-button {
+    padding: 0.5rem;
+}
+.todo-container{
+    background-color: white;
+    margin: 1rem 0rem;
+    min-height: fit-content;
+    width: 100%;
+}
+.todo-item{
+    list-style: none;
+    color: black;
+    flex-grow: 1;
+    font-size: 1.5rem;
+    padding: 0rem 1rem;
+}
+.delete-btn,
+.complete-btn{
+    cursor: pointer;
+}
+.fa-check,
+.fa-trash{
+    padding: 0.5rem;
+    pointer-events: none;
+    color: white;
+} 
+.delete-btn{
+    background-color: red;
+}
+.complete-btn{
+    background-color: green;
+}
+.completed{
+    opacity: 0.5;
+    text-decoration: line-through;
+}
